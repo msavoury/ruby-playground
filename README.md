@@ -140,3 +140,10 @@ Flip-Flops
 ```
 (1..10).each {|x| print x if x==3..x>=3} # prints "34"
 ```
+=======
+# rake 
+```rake -P ``` show 
+
+```rake -T ``` show tasks that have a desc specified
+
+```rake <task-name> MY_ENV_VAR=HELLO ``` : pass environment variables 
