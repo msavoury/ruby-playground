@@ -1,13 +1,13 @@
 # ruby-playground
 Working with the Ruby programming language
 
-#Datatypes
+# Datatypes
 - Ruby includes 5 built-in classes for representing numbers
 - All number objects in Ruby are instances of Numeric
 - Floating point literals require a digit before the decimal point. (e.g. 0.1 is valid, .1 is not) 
 - Single quoted strings may extend over multiple lines
 
-#Other
+# Other
 Execute a line of code from command line
 ```
 ruby -e "<line of code here>"
@@ -26,7 +26,7 @@ myvar = h[:one]
 h[:three] = 3
 ```
 
-###Strings 
+### Strings 
 Double-quoted strings can include ruby expressions
 ```
 print "#{value}:#{key}"
@@ -56,7 +56,7 @@ name = "foobar"
 name[1,2] = "zy" # prints fzybar 
 ```
 
-###Arrays
+### Arrays
 - Reading past the end of an aray in Ruby returns ```nil```. It **does not** throw an exception
 - Rubys arrays are untyped and the elements that they contain need not be of the same type
 Array constructor can take a block that specifies how to initialize each index
@@ -68,7 +68,7 @@ nums = Array.new(10) {|i| i * 10} # value of nums is  [0, 10, 20, 30, 40, 50, 60
 - The ``` concat ``` method appends the elements of an array to the array
 - The ``` - ``` operator removes the elements in on the left hand from the elements on the right hand side
 - The ```&``` and ```|``` operators correspond to the intersect and union operations respectively
-###Ranges
+### Ranges
 Ruby allows for literal Ranges: 
 ```
 1..3  # 3 is included 
@@ -91,7 +91,7 @@ myString = "Hello"
 newSymbol = myString.intern
 ```
 
-#Misc
+# Misc
 - Classes and modules are "open" and can be modified and extended at runtime
 - Methods in ruby are allowed to return more than one value
 - Ruby supports parallel assignment:
@@ -111,12 +111,12 @@ Ruby allows for literal regex expressions ```/[Rr]uby/```
 Only the values 'nil' and false evaluate to false in boolean expressions
 
 
-##Objects and classes
+## Objects and classes
 ### Creating an object
 Use <className>.new(params)
 ```
 s = Sequence.new(1,3,4)
-###Constructor
+### Constructor
 ```
 When objects are constructed, ruby calls the ```initialize``` method defined in the class
 ```
